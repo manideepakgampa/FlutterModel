@@ -5,21 +5,25 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("theGnaN's-VtracK"),
-          backgroundColor: const Color.fromARGB(255, 33, 101, 205),
-        ),
-        body: Container(
-          child: Text("Hello World! This is theGnaN's - VtracK"),
-          color: const Color.fromARGB(255, 133, 255, 196),
-          height: 450,
-          width: 450,
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Text("Hello Flutter !"),
+        foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+        backgroundColor: Colors.blue[900],
+        centerTitle: true,
+      ),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          color: Colors.blue[100],
         ),
       ),
-    );
+    ));
   }
 }
